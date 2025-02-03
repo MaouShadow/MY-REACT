@@ -1,0 +1,7 @@
+export {default as About} from './About'
+export {default as Contact} from './Contact'
+export {default as Experience} from './Experience'
+export {default as Home} from './Home'
+export {default as Resume} from './Resume'
+export {default as Services} from './Services'
+export {default as HomeLayOut} from './HomeLayOut'

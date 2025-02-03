@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --scarlet: #FF2400; /* Scarlet - Base Color */
+  --dark-scarlet: #D41C00; /* Darker Scarlet for accents */
+  --light-scarlet: #FF5A5A; /* Lighter Scarlet for highlights */
+  --scarlet-muted: #FF8F80; /* Muted Scarlet for backgrounds */
+  --scarlet-contrast: #FFFFFF; /* Contrast Color (White for text/background) */
+  --scarlet-dark: #B22222; /* Dark Scarlet for deeper elements */
+  --scarlet-light: #FFD1D1; /* Light Scarlet for subtle backgrounds */
+  --scarlet-gray: #E6B7B7; /* Scarlet gray tone for borders/shadows */
+}
