@@ -1,4 +1,5 @@
-
+import "../assets/styles/home.css";
+import developer from "../assets/images/undraw_hello_re_3evm.svg";
 
 const Home = () => {
   return (
@@ -15,19 +16,17 @@ const Home = () => {
                   </h1>
                 </div>
                 <div>
-                  <h3>
+                  <h3 className="ara">
                     I am Adebola, a Software Engineer crafting precise tech
-                    solutions and an Mechatronics Engineer passionate about innovating
-                    in the engineering world. Join me on my journey as I bridge programming and engineering to create meaningful impact.
+                    solutions and an Mechatronics Engineer passionate about
+                    innovating in the engineering world. Join me on my journey
+                    as I bridge programming and engineering to create meaningful
+                    impact.
                   </h3>
                 </div>
               </section>
               <div>
-                <img
-                  className="side"
-                  src="../images/undraw_hello_re_3evm.svg"
-                  alt="Hello"
-                />
+                <img className="side" src={developer} alt="Hello" />
               </div>
             </section>
           </section>
@@ -37,45 +36,28 @@ const Home = () => {
           <h2>Languages</h2>
           <ul>
             <li>JavaScript</li>
-            <li>TypeScript</li>
             <li>React.js</li>
           </ul>
           <h2>Frameworks</h2>
           <ul>
             <li>Tailwind CSS</li>
             <li>Bootstrap</li>
-            <li>Material UI</li>
-          </ul>
-          <h2>Productivity Tools</h2>
-          <ul>
-            <li>Slack</li>
-            <li>Jira</li>
-            <li>ClickUp</li>
-            <li>Microsoft Teams</li>
           </ul>
           <h2>Hosting Platforms</h2>
           <ul>
             <li>Vercel</li>
             <li>Netlify</li>
-            <li>Heroku</li>
+            <li>GitHub</li>
           </ul>
           <h2>Version Control</h2>
           <ul>
             <li>GitHub</li>
             <li>GitLab</li>
-            <li>Bitbucket</li>
-          </ul>
-          <h2>Content Management System</h2>
-          <ul>
-            <li>Contentful</li>
-            <li>DatoCMS</li>
-            <li>Strapi</li>
-            <li>Sanity</li>
           </ul>
         </div>
       </section>
     </section>
   );
-}
+};
 
-export default Home
+export default Home;

@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './assets/styles/App.css'
-import {About, Contact, Experience, Home, HomeLayOut, Resume, Services} from './pages';
+import {About, Contact, Experience, Home, HomeLayOut, Resume, Services, GithubUsers} from './pages';
 const router = createBrowserRouter([{
   path: '/',
   element: <HomeLayOut />,
@@ -28,6 +28,10 @@ const router = createBrowserRouter([{
     {
       path: '/Resume',
       element: <Resume />,
+    },
+    {
+      path: '/GithubUsers',
+      element: <GithubUsers/>
     }
   ]
 },

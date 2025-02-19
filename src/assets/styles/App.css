@@ -5,12 +5,135 @@
 }
 
 :root {
-  --scarlet: #FF2400; /* Scarlet - Base Color */
-  --dark-scarlet: #D41C00; /* Darker Scarlet for accents */
-  --light-scarlet: #FF5A5A; /* Lighter Scarlet for highlights */
-  --scarlet-muted: #FF8F80; /* Muted Scarlet for backgrounds */
-  --scarlet-contrast: #FFFFFF; /* Contrast Color (White for text/background) */
-  --scarlet-dark: #B22222; /* Dark Scarlet for deeper elements */
-  --scarlet-light: #FFD1D1; /* Light Scarlet for subtle backgrounds */
-  --scarlet-gray: #E6B7B7; /* Scarlet gray tone for borders/shadows */
+  --black: #000000;
+  --charcoal: #333333;
+  --gunmetal: #2C3E50;
+  --white-smoke: #F5F5F5;
+  --electric-blue: #3498DB;
+  --deep-red: #E74C3C;
+  --lime-green: #2ECC71;
+  --gold-yellow: #F1C40F;
+  --purple-royale: #8E44AD;
+    --faint-gray: #E0E0E0;
+  --light-gray: #D3D3D3;
+  --silver: #C0C0C0;
+    --bg-color: white;
+  --text-color: black;
+}
+
+
+
+.luffy a:hover {
+  color: var(--electric-blue);
+    text-shadow: 0 0 5px var( --electric-blue),
+                0 0 25px var( --electric-blue),
+                0 0 50px var( --electric-blue),
+                0 0 100px var( --electric-blue);
+  }
+
+  .luffy a{
+    color: var(--white-smoke);
+  }
+
+ .move a:hover {
+  color: var(--electric-blue);
+    text-shadow: 0 0 5px var( --electric-blue),
+                0 0 25px var( --electric-blue),
+                0 0 50px var( --electric-blue),
+                0 0 100px var( --electric-blue);
+  }
+
+  .shadow__btn {
+    /* padding: 10px 20px; */
+    border: none;
+    /* font-size: 17px; */
+    color: #fff;
+    border-radius: 7px;
+    /* letter-spacing: 4px; */
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: var(--scarlet-dark);
+    box-shadow:var(--electric-blue);
+  }
+  
+  .shadow__btn:hover {
+    color: var(--black);
+    background-color: var(--electric-blue);
+    box-shadow: 0 0 5px var( --electric-blue),
+                0 0 25px var( --electric-blue),
+                0 0 50px var( --electric-blue),
+                0 0 100px var(--electric-blue);
+  }
+
+.mid{
+    text-align: center;
+}
+
+.list {
+  width: 90dvw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  background-color: var(--charcoal);
+  padding: 1rem;
+  border-radius: 8px;
+  list-style-type: none;
+}
+
+.card {
+  margin: 1rem;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px; 
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100px; 
+  height: 100px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: var(--black);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--silver);
+}
+
+.card h1 {
+  text-transform: uppercase;
+  font-size: 0.99rem; 
+  font-weight: bold;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.card a {
+  color: var(--scarlet-contrast);
+}
+
+.list ul {
+  list-style: none;
 }

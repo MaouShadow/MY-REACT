@@ -1,6 +1,13 @@
 
+import '../assets/styles/about.css'
+import Devguy from '../assets/images/undraw_developer_activity_re_39tg.svg';
+import Prior from "../assets/images/undraw_prioritise_re_r5xu.svg";
+import Webdev from '../assets/images/undraw_web_developer_re_h7ie.svg';
+import Cert from '../assets/images/undraw_certificate_re_yadi.svg'
+import Engr from "../assets/images/undraw_engineering_team_a7n2.svg";
 
 const About = () => {
+
   return (
     <section className="intro">
       <div className="about">
@@ -20,7 +27,7 @@ const About = () => {
             <div className="image">
               <img
                 className="img"
-                src="../images/undraw_developer_activity_re_39tg.svg"
+                src={Devguy}
                 alt="dev guy"
               />
             </div>
@@ -32,7 +39,7 @@ const About = () => {
             <div>
               <img
                 className="img2"
-                src="../images/undraw_web_developer_re_h7ie.svg"
+                src={Webdev}
                 alt=""
               />
             </div>
@@ -58,7 +65,7 @@ const About = () => {
             <div className="image4">
               <img
                 className="img2"
-                src="../images/undraw_engineering_team_a7n2.svg"
+                src={Engr}
                 alt=""
               />
             </div>
@@ -69,7 +76,7 @@ const About = () => {
             <div className="image5">
               <img
                 className="img2"
-                src="../images/undraw_prioritise_re_r5xu.svg"
+                src={Prior}
                 alt=""
               />
             </div>
@@ -96,7 +103,7 @@ const About = () => {
             <div className="image6">
               <img
                 className="img2"
-                src="../images/undraw_certificate_re_yadi.svg"
+                src={Cert}
                 alt=""
               />
             </div>
@@ -105,6 +112,6 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
-export default About
+export default About;

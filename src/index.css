@@ -18,13 +18,18 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.dark-mode {
+  --bg-color: #2C3E50;
+  --text-color: white;
+    --gunmetal: #2C3E50;
 }
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
 
 h1 {
   font-size: 3.2em;
@@ -41,7 +46,7 @@ h1 {
   margin-bottom: auto;
   display: flex;
   justify-content: space-between;
-  background-color: var(--dark-scarlet);
+  background-color: var( --black);
   padding: 10px;
 }
 
@@ -52,8 +57,13 @@ h1 {
 }
 
 .luffy{
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    width: 100%;
+    padding: 10px 5ss0px;
   margin-top: auto;
-  background-color: var(--dark-scarlet);
+  background-color: var( --black);
   padding: 10px;
   color: #faf8f8;
 }
@@ -87,5 +97,52 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 600px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .card h1 {
+    font-size: 1.2rem;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card h1 {
+    font-size: 1.8rem;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card h1 {
+    font-size: 2rem;
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
   }
 }

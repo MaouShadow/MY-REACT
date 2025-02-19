@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    margin: 0 auto;
+    /* flex-direction: column; */
+    padding: 1rem 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.home a{
+    text-decoration: none;
+    color: #10b981;
+}
+
+/* .move a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+} */
+
+span{
+    color: #10b981;
+}
+
+
+.ab{
+    text-align: center;
+    padding: 2rem;
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.sec1{
+    min-height: 50vh;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1rem
+}
+
+.cont1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 4rem
+}
+
+/* .bio{
+    
+} */
+
+.int{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 1px;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+    max-width: 35em;
+    color: #94a3b8;
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 2.5rem); 
+}
+
+.img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.sec2{
+    min-height: 50vh;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1rem
+}
+
+.bio2{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 4rem;
+    width: 90vw;
+}
+
+.teach, .web, .ment, .dead, .pas{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 5rem);
+}
+
+h3{
+    line-height: 2;
+    max-width: 35em;
+    color: #94a3b8;
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    margin: 0;
+}
+
+.sec3, .sec4, .sec5, .sec6{
+    min-height: 50vh;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bio4, .bio6{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 4rem;
+    width: 90vw;
+}
+
+.bio5, .bio3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    gap: 2rem
+}
+
+.img2{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.foot{
+    background-color: #1e293b;
+    color: white;
+    /* background-color: grey-800; */
+    position: sticky;
+    top: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav .move {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .about h1.ab {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6 {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+    }
+
+    .cont1, .bio2, .bio3, .bio4, .bio5, .bio6 {
+        display: block;
+    }
+
+    .bio, .bio2, .bio3, .bio4, .bio5, .bio6 {
+        margin: 1rem 0;
+    }
+
+    .bio .int, .bio2 h3, .bio3 h3, .bio4 h3, .bio5 h3, .bio6 h3 {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .image img, .image2 img, .img2 {
+        width: 100%;
+        max-width: 300px;
+        margin: 1rem 0;
+    }
+
+    .foot footer {
+        text-align: center;
+        padding: 1rem;
+    }
+}
